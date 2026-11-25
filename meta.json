@@ -1,0 +1,119 @@
+{
+  "risk_features": [
+    "temp_c",
+    "rh",
+    "wind",
+    "rain_mm",
+    "rain_30d_mm",
+    "ndvi_pre",
+    "elevation",
+    "slope",
+    "treecover",
+    "month",
+    "past_fires_5km"
+  ],
+  "damage_features": [
+    "temp_c",
+    "rh",
+    "wind",
+    "rain_mm",
+    "rain_30d_mm",
+    "ndvi_pre",
+    "elevation",
+    "slope",
+    "treecover",
+    "month",
+    "past_fires_5km",
+    "frp"
+  ],
+  "ranges": {
+    "temp_c": [
+      20.619280859629356,
+      34.83690777460735,
+      27.410759226481133
+    ],
+    "rh": [
+      22.920103332377373,
+      91.29387990691845,
+      55.44170656277893
+    ],
+    "wind": [
+      0.17327917411951096,
+      5.296386196514077,
+      1.8062556178517937
+    ],
+    "rain_mm": [
+      0.0,
+      24.37991052865973,
+      0.0025868415693963698
+    ],
+    "rain_30d_mm": [
+      0.03133301852997761,
+      385.2220779624083,
+      11.60635445372371
+    ],
+    "ndvi_pre": [
+      0.20963250000000003,
+      0.8564289999999999,
+      0.4842
+    ],
+    "elevation": [
+      7.0,
+      1041.4699999999998,
+      375.0
+    ],
+    "slope": [
+      0.0,
+      38.37231353759765,
+      5.874811172485352
+    ],
+    "treecover": [
+      0.0,
+      85.0,
+      0.0
+    ],
+    "month": [
+      1.0,
+      12.0,
+      4.0
+    ],
+    "past_fires_5km": [
+      0.0,
+      92.0,
+      4.0
+    ],
+    "frp": [
+      4.7,
+      132.9,
+      15.3
+    ]
+  },
+  "risk_thresholds": [
+    0.33,
+    0.66
+  ],
+  "damage_thresholds": [
+    -0.15,
+    -0.05
+  ],
+  "importance": {
+    "temp_c": 0.047699235186066447,
+    "rh": 0.1911853064782886,
+    "wind": 0.037952553146946975,
+    "rain_mm": 0.10294413496405981,
+    "rain_30d_mm": 0.12337782567954314,
+    "ndvi_pre": 0.07841150692465722,
+    "elevation": 0.06413992779221767,
+    "slope": 0.04512123733379903,
+    "treecover": 0.012458256652149315,
+    "month": 0.20787853873675266,
+    "past_fires_5km": 0.08883147710551922
+  },
+  "best_clf": "Random Forest (tuned)",
+  "clf_auc": 0.8931815190206661,
+  "best_dmg": "Random Forest",
+  "first_year": 2015,
+  "last_year": 2025,
+  "demo": false,
+  "fire_source": "NASA fire detections (uploaded CSV: classification_results.csv, fires_earthengine.csv)"
+}
